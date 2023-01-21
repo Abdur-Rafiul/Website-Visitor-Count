@@ -24,7 +24,7 @@ a{
 <body>
 
 
-<h3>YouTube Link : <a href="https://www.youtube.com/@rafiulislam7097">Rafiul Islam</a><h3>
+<h3>YouTube Link : <a style="color:red" href="https://www.youtube.com/@rafiulislam7097">Rafiul Islam</a><h3>
 <br><br><br>
   $ip_address = $_SERVER['REMOTE_ADDR'];<br>
   $visit_time = date("h:i:sa");<br>
