@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Visitor Count</title>
+
 
 </head>
 <body>
