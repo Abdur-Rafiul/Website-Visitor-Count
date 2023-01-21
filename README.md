@@ -1,25 +1,48 @@
 # Website-Visitor-Count
 
 
-<h6 style="color:red">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style >
+
+body{
+
+  background-color:black;
+
+   color:white;
+
+}
+
+a{
+  color:red;
+}
+
+</style>
+</head>
+<body>
 
 
-include('db.php');
-  $ip_address = $_SERVER['REMOTE_ADDR'];
-  $visit_time = date("h:i:sa");
-  $visit_date = date("d-m-y");
+<h3>YouTube Link : <a href="https://www.youtube.com/@rafiulislam7097">Rafiul Islam</a><h3>
+<br><br><br>
+  $ip_address = $_SERVER['REMOTE_ADDR'];<br>
+  $visit_time = date("h:i:sa");<br>
+  $visit_date = date("d-m-y");<br>
 
-  $country = date_default_timezone_get();
+  $country = date_default_timezone_get();<br><br>
 
-  $ipdat = @json_decode(file_get_contents(
-    "http://www.geoplugin.net/json.gp?ip=" . $ip_address));
+  $ipdat = @json_decode(file_get_contents(<br>
+    "http://www.geoplugin.net/json.gp?ip=" . $ip_address));<br><br><br>
    
 
- $sql1 = "INSERT INTO question_2 (time1,ip,country,city)
-VALUES ('$visit_time', '$ip_address', '$ipdat->geoplugin_countryName', '$ipdat->geoplugin_city')";
+ $sql1 = "INSERT INTO question_2 (time1,ip,country,city)<br>
+VALUES ('$visit_time', '$ip_address', '$ipdat->geoplugin_countryName',<br> '$ipdat->geoplugin_city')";<br><br>
  
-$result = mysqli_query($conn,$sql1);
+$result = mysqli_query($conn,$sql1);<br><br><br><br>
 
 
+</body>
+</html>
 
-<h6>
+
