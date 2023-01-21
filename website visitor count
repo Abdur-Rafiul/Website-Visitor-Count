@@ -1,5 +1,5 @@
  
- <h5>
+
  include('db.php');
   $ip_address = $_SERVER['REMOTE_ADDR'];
   $visit_time = date("h:i:sa");
@@ -16,4 +16,4 @@ VALUES ('$visit_time', '$ip_address', '$ipdat->geoplugin_countryName', '$ipdat->
  
 $result = mysqli_query($conn,$sql1);
 
-</h5>
+
