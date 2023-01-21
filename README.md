@@ -5,21 +5,7 @@
 <html>
 <head>
 <title>Visitor Count</title>
-<style >
 
-body{
-
-  background-color:black;
-
-   color:white;
-
-}
-
-a{
-  color:red;
-}
-
-</style>
 </head>
 <body>
 
